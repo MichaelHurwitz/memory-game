@@ -1,0 +1,51 @@
+/* DifficultySelector.css */
+
+.difficulty-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px; /* ריווח פנימי גדול יותר */
+    text-align: center;
+    animation: popUp 0.5s ease forwards;
+    background-color: rgba(255, 255, 255, 0); /* רקע שקוף קלות */
+    border-radius: 20px; /* קצוות מעוגלים גדולים יותר */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* צל חזק יותר */
+    border: 3px solid #ddd; /* מסגרת בולטת מעט יותר */
+    max-width: 700px; /* הגדלת הרוחב */
+    margin: 30px auto;
+  }
+  
+  .difficulty-selector h2 {
+    color: #333;
+    font-size: 2.5rem; /* גודל פונט מוגדל */
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .difficulty-button {
+    background: linear-gradient(135deg, #4A90E2, #50E3C2); /* גרדיאנט אלגנטי */
+    color: white;
+    padding: 15px 25px; /* ריווח פנימי מוגדל בכפתורים */
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem; /* פונט גדול יותר */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15px 0; /* מרווחים רחבים יותר בין הכפתורים */
+    width: 220px; /* כפתורים רחבים יותר */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .difficulty-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  }
+  
+  @keyframes popUp {
+    0% { transform: scale(0.8); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+  }

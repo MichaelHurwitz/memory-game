@@ -1,0 +1,59 @@
+/* App.css */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #ddd; /* מסגרת עדינה חיצונית */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* צל עדין */
+  background-color: transparent; /* הרקע של המשחק נשאר כמו שהוא */
+}
+
+/* App.css */
+
+.button {
+  background: linear-gradient(135deg, #4A90E2, #50E3C2); /* גרדיאנט עדין */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px; /* קצוות מעוגלים */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* צל עדין */
+}
+
+.button:hover {
+  transform: translateY(-2px); /* אפקט התרוממות קל */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.reset-button, .main-reset-button {
+  background: linear-gradient(135deg, #4A90E2, #50E3C2);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-button:hover, .main-reset-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

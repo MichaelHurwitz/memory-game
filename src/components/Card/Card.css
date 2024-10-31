@@ -1,0 +1,27 @@
+/* Card.css */
+
+.card {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #66b2ff, #3399ff); /* גרדיאנט כמו בכפתורי בחירת הקושי */
+    color: rgb(255, 255, 255);
+    border-radius: 12px; /* פינות מעוגלות */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.4s, box-shadow 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* צל קל */
+    overflow: hidden;
+}
+
+.card.flipped {
+    background-color: #ffffff; /* רקע בהיר לכרטיס הפתוח */
+    color: #333; /* צבע כהה לכרטיס פתוח */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* צל עמוק יותר כשהכרטיס פתוח */
+}
+
+.card:hover {
+    transform: scale(1.05); /* הגדלה קלה באפקט מעבר עכבר */
+}
